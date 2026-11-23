@@ -99,9 +99,10 @@
   .stores .s-coupang{color:var(--coupang); background:var(--coupang-bg); border-color:var(--coupang-line)}
   .col-go{
     flex:0 0 auto; width:32px;height:32px;border-radius:50%; display:grid;place-items:center;
-    background:#fbfaf8; border:1px solid #ecebe6; color:#5f646d; font-size:15px; font-weight:800;
+    background:#fff; border:1px solid #e8e6e1; color:#3a3e46;
     position:relative; z-index:1; transition:background .15s, color .15s, border-color .15s;
   }
+  .col-go svg{display:block}
   .collection:hover .col-go{background:var(--accent); color:#fff}
 
   .soon{
@@ -122,9 +123,10 @@
   .col-top{display:flex; align-items:center; gap:10px; min-height:34px}
   .back{
     width:34px;height:34px;flex:0 0 auto; border-radius:50%; display:grid; place-items:center;
-    background:var(--card); border:1px solid var(--line); text-decoration:none; color:#4a4f57;
-    font-size:15px; box-shadow:var(--sh);
+    background:var(--card); border:1px solid var(--line); text-decoration:none; color:#33373d;
+    box-shadow:var(--sh);
   }
+  .back svg{display:block}
   .back:active{transform:scale(.95)}
   .col-top .kicker{font-size:11.5px; font-weight:800; color:#a48a7f; letter-spacing:.02em}
   .col-hero h2{margin:12px 0 0; font-size:22px; font-weight:800; letter-spacing:-.035em; display:flex; align-items:center; gap:8px}
@@ -284,7 +286,7 @@
           <i class="s-ali">알리</i><i class="s-naver">네이버</i><i class="s-coupang">쿠팡</i>
         </div>
       </div>
-      <span class="col-go" aria-hidden="true">→</span>
+      <span class="col-go" aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span>
     </a>
 
     <div class="soon">
@@ -301,7 +303,7 @@
   <section id="viewTesla" class="view" hidden>
     <div class="col-hero">
       <div class="col-top">
-        <a class="back" href="#home" aria-label="컬렉션 목록으로">←</a>
+        <a class="back" href="#home" aria-label="컬렉션 목록으로"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></a>
         <span class="kicker">컬렉션 · 출고기 #5</span>
       </div>
       <h2><span class="em" aria-hidden="true">🚗</span>테슬라 모델Y 모음</h2>
