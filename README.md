@@ -10,6 +10,8 @@ GitHub Pages로 서비스됩니다 → **https://kimmoonsu1993.github.io/**
   - 번호 검색(`5`, `⑭`), 카테고리 필터(수납·정리 / 충전·거치 / 외장·보호 / 실내·기타)
   - 아이템별 `알리` · `네이버` · `쿠팡` 링크 버튼
   - 딥링크: `https://kimmoonsu1993.github.io/#tesla/i14` → ⑭번 아이템으로 바로 이동
+- **컬렉션** — `#morning` : 모닝 블랙박스 (파인뷰 X3700 2채널 · 구매링크 1개, 쿠팡 파트너스)
+  - 단일 상품이라 검색·필터 없이 카드 하나로 구성(HTML 직접 작성)
 
 파일은 `index.html` 하나(HTML + CSS + 바닐라 JS, 빌드 없음)와 `.nojekyll` 뿐입니다.
 
@@ -32,8 +34,10 @@ GitHub Pages로 서비스됩니다 → **https://kimmoonsu1993.github.io/**
 ## 새 컬렉션 추가
 
 1. `index.html`의 `<section id="viewTesla">`를 복제해 `viewHawaii` 같은 섹션을 만들고
+   (상품이 한두 개뿐이면 `viewMorning`처럼 `<article class="item">`을 직접 써도 됩니다)
 2. 홈의 `.collection` 카드(`href="#hawaii"`)를 하나 더 추가한 뒤
-3. `route()`의 정규식(`/^tesla/`)에 새 컬렉션 이름을 넣습니다.
+3. `route()`의 정규식(`/^(tesla|morning)(?:\/i(\d{1,2}))?$/`)에 새 컬렉션 이름을 넣고,
+   `var viewHawaii = document.getElementById("viewHawaii");`와 표시/숨김 분기를 추가합니다.
 
 ## 링크 원칙
 
@@ -41,4 +45,4 @@ GitHub Pages로 서비스됩니다 → **https://kimmoonsu1993.github.io/**
 - 제휴 링크에는 `rel="noopener noreferrer sponsored"`, 비제휴 상품 페이지에는 `sponsored`를 붙이지 않습니다.
 - 대가성 고지는 홈과 컬렉션 하단에 표시합니다.
 
-현재 수록 링크: 알리익스프레스 20 · 알리 비제휴 상품 페이지 1 · 네이버 쇼핑 10 · 쿠팡 1 = **32개**
+현재 수록 링크: 알리익스프레스 20 · 알리 비제휴 상품 페이지 1 · 네이버 쇼핑 10 · 쿠팡 2(테슬라 ⑫ 범퍼핀 / 모닝 X3700) = **33개**

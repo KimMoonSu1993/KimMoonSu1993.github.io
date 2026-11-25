@@ -119,6 +119,7 @@
   .col-go svg{display:block}
   .collection:hover .col-go{background:var(--accent); color:#fff}
 
+  .collection + .collection{margin-top:10px}
   .soon{
     display:flex; align-items:center; gap:12px; margin-top:10px;
     border:1px dashed #dedbd4; border-radius:var(--r-md); padding:14px;
@@ -258,6 +259,8 @@
     border-radius:5px; padding:1px 6px; flex:0 0 auto;
   }
   .col-foot .disc{margin-top:16px}
+  .fine{margin:10px 2px 0; padding-left:14px; font-size:11px; color:#9a9fa8; line-height:1.75; letter-spacing:-.02em}
+  .fine li{margin-top:2px}
   .copy{margin:14px 0 0; text-align:center; font-size:11px; color:#aaafb7}
   .top-link{display:block; margin:12px auto 0; text-align:center; font-size:11.5px; color:#8b9099; text-decoration:none}
 
@@ -273,8 +276,8 @@
       <div class="avatar" aria-hidden="true">MS</div>
       <h1>MS의 리얼 리뷰</h1>
       <p class="bio">
-        테슬라 모델Y 주니퍼 · <b>리얼 내돈내산</b> 리뷰<br>
-        글에 나온 제품 링크를 번호 순서대로 모았어요
+        테슬라 모델Y 주니퍼 · 2015 모닝 <b>리얼 내돈내산</b> 리뷰<br>
+        글에 나온 제품 구매링크를 한곳에 모았어요
       </p>
       <nav class="quick" aria-label="채널">
         <a href="https://blog.naver.com/moonsu_93" target="_blank" rel="noopener noreferrer"><span class="dot"></span>네이버 블로그</a>
@@ -289,7 +292,7 @@
 
     <div class="sec-head">
       <h2>컬렉션</h2>
-      <span id="homeMeta">1개</span>
+      <span id="homeMeta">2개</span>
     </div>
 
     <a class="collection" href="#tesla" id="teslaCard">
@@ -300,6 +303,19 @@
         <p id="teslaCardMeta">알리 용품 21종 · 구매링크 32개</p>
         <div class="stores">
           <i class="s-ali">알리</i><i class="s-naver">네이버</i><i class="s-coupang">쿠팡</i>
+        </div>
+      </div>
+      <span class="col-go" aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span>
+    </a>
+
+    <a class="collection" href="#morning" id="morningCard">
+      <div class="col-thumb" aria-hidden="true">🎥</div>
+      <div class="col-body">
+        <span class="col-badge">장착기</span>
+        <h3>모닝 블랙박스</h3>
+        <p>파인뷰 X3700 2채널 · 구매링크 1개</p>
+        <div class="stores">
+          <i class="s-coupang">쿠팡</i>
         </div>
       </div>
       <span class="col-go" aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span>
@@ -362,6 +378,51 @@
       </p>
       <p class="copy">© MS의 리얼 리뷰</p>
       <a class="top-link" href="#tesla" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ 맨 위로</a>
+    </div>
+  </section>
+
+  <!-- ================= COLLECTION: MORNING BLACKBOX ================= -->
+  <section id="viewMorning" class="view" hidden>
+    <div class="col-hero">
+      <div class="col-top">
+        <a class="back" href="#home" aria-label="컬렉션 목록으로"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></a>
+        <span class="kicker">컬렉션 · 모닝 장착기</span>
+      </div>
+      <h2><span class="em" aria-hidden="true">🎥</span>모닝 블랙박스</h2>
+      <p class="lead">
+        2015년식 기아 모닝(TA)에 <b>파인뷰 X3700 2채널</b>을 출장 장착한 기록.<br>
+        글에 나온 구매 링크를 아래에 모았습니다.
+      </p>
+    </div>
+
+    <div class="rows" style="margin-top:14px">
+      <article class="item" id="morningItem">
+        <div class="ico" aria-hidden="true">📷</div>
+        <div class="body">
+          <div class="line1"><span class="no">①</span><h3>파인뷰 X3700 2채널 블랙박스</h3></div>
+          <p class="desc">전면 QHD · 후면 FHD 2채널, AI 스마트폰 연동, GPS · 출장설치쿠폰 포함 구성</p>
+          <span class="memo">구매 당시 174,000원 · 로켓배송</span>
+          <span class="memo">8종 · 32GB 구성</span>
+          <div class="links">
+            <a class="btn coupang" href="https://link.coupang.com/a/iLxHQ8QaTQ" target="_blank" rel="noopener noreferrer sponsored"><span class="d"></span>쿠팡<span class="t">로켓배송</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <ul class="fine">
+      <li>링크는 쿠팡 상품 페이지로 연결됩니다. 구성·옵션은 페이지에서 직접 선택해 주세요.</li>
+      <li>가격·구성·배송 조건은 판매처 사정에 따라 달라질 수 있으니 링크에서 최종 확인해 주세요.</li>
+    </ul>
+
+    <div class="col-foot">
+      <a class="cta" href="https://blog.naver.com/moonsu_93" target="_blank" rel="noopener noreferrer">MS의 리얼 리뷰 블로그 보기</a>
+
+      <p class="disc">
+        <b>※</b> 이 컬렉션의 구매 링크는 쿠팡 파트너스 활동의 일환으로, 링크를 통해 구매하시면 이에 따른 일정액의 수수료를 제공받습니다.
+      </p>
+      <p class="copy">© MS의 리얼 리뷰</p>
+      <a class="top-link" href="#morning" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ 맨 위로</a>
     </div>
   </section>
 
@@ -518,6 +579,7 @@
 
   var viewHome = document.getElementById("viewHome");
   var viewTesla = document.getElementById("viewTesla");
+  var viewMorning = document.getElementById("viewMorning");
   var grid = document.getElementById("grid");
   var countEl = document.getElementById("count");
   var emptyEl = document.getElementById("empty");
@@ -670,19 +732,26 @@
 
   function route(){
     var h = (location.hash || "").replace(/^#/, "");
-    var m = /^tesla(?:\/i(\d{1,2}))?$/.exec(h);
+    var m = /^(tesla|morning)(?:\/i(\d{1,2}))?$/.exec(h);
     if (m){
-      build();
+      var isTesla = (m[1] === "tesla");
       viewHome.hidden = true;
-      viewTesla.hidden = false;
-      if (m[1] && /^([1-9]|1[0-9]|2[01])$/.test(m[1])) {
-        focusItem(m[1]);
+      viewTesla.hidden = !isTesla;
+      viewMorning.hidden = isTesla;
+      if (isTesla){
+        build();
+        if (m[2] && /^([1-9]|1[0-9]|2[01])$/.test(m[2])) {
+          focusItem(m[2]);
+        } else {
+          apply();
+          window.scrollTo({top:0, behavior:"auto"});
+        }
       } else {
-        apply();
         window.scrollTo({top:0, behavior:"auto"});
       }
     } else {
       viewTesla.hidden = true;
+      viewMorning.hidden = true;
       viewHome.hidden = false;
       window.scrollTo({top:0, behavior:"auto"});
     }
